@@ -12,8 +12,6 @@ body {
 .container {
   width: 100%;
   height: 100%;
-  /*border: 2px solid rgb(168, 74, 156);*/
-  position: absolute;
   background-color: rgb(20, 20, 20);
 }
 
@@ -21,53 +19,39 @@ body {
   width: 100%;
   height: 20%;
   background-color: rgb(92, 83, 83);
-  /*border: 2px solid black;*/
   position: relative;
 }
 
 .contenitore-mezzo {
   width: 100%;
   height: 75%;
-  border: 2px solid transparent; /*se li tolgo il .centro sale di qualche px... */
   position: relative;
 }
 
-.contenitore-mezzo:after {
-  content: "";
-  display: table;
-  clear: both;
+.colonna {
+  float: left; /*NOTA: vale per .sinistra, .centro, .destra: */
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  margin-left: 2.5%;
 }
 
 .sinistra {
-  /*border: 1px solid black;*/
   height: 90%;
-  width: 23%;
-  float: left;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 30px;
+  width: 22%;
   background-color: rgb(206, 93, 73);
 }
 
 .centro {
-  /*border: 1px solid green;*/
   height: 90%;
-  width: 40%;
+  width: 46%;
   position: relative;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
   background-color: rgb(177, 109, 177);
 }
 
 .destra {
-  /*border: 1px solid orange;*/
-  width: 23%;
+  width: 22%;
   height: 90%;
-  position: absolute;
-  right: 30px;
-  top: 0;
-  top: 20px;
+  position: relative;
   background-color: rgb(87, 170, 162);
 }
 
@@ -75,9 +59,6 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgb(197, 197, 56);
-  width: auto;
   height: 5%;
-  /*border: 1px solid red;*/
-  position: relative;
   bottom: 0;
 }
