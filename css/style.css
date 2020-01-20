@@ -7,18 +7,20 @@
 body {
   width: 100vw;
   height: 100vh;
+  background-color: rgb(21, 31, 31);
 }
 
 .container {
-  width: 100%;
+  width: 80%; /*prima era al 100%*/
   height: 100%;
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(61, 55, 55);
+  margin: 0 auto;
 }
 
 .contenitore-header {
   width: 100%;
   height: 20%;
-  background-color: rgb(92, 83, 83);
+  background-color: rgb(95, 77, 77);
   position: relative;
 }
 
